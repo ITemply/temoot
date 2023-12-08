@@ -16,6 +16,8 @@ thread_lock = Lock()
 from dotenv import load_dotenv
 load_dotenv()
 
+enKey = os.environ['EN_KEY']
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
   if request.method == 'GET':
