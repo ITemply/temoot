@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class='bg'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Temoot - Home</title>
+  <link href="static/style.css" rel="stylesheet" type="text/css" />
+  <link rel='icon' type='image/x-icon' href='static/images/icon.ico'>
+</head>
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+<script src="static/js/index.js"></script>
+  
+<body>
+  <center>
+    <h1>Home</h1>
+    <p>join, play, create, or host a game on temoot</p>
+    <input type="button" value="Join" onclick="window.location.href='/chat'" class="join-button">
+    <br><br>
+    <input type="button" value="Host" onclick="window.location.href='/random-chat'" class="btn">
+    <br><br>
+    <input type="button" value="Sign Out" onclick="signOut()" class="btn">
+  </center>
+</body>
+  
+</html>
